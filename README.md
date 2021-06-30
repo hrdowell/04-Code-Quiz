@@ -40,7 +40,7 @@ THEN I can save my initials and my score
 
 The following animation demonstrates the application functionality:
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](C:\Users\Hannah\Documents\GitHub\04-Code-Quiz\assets\images\04-web-apis-homework-demo.gif))
+![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./assets/images/04-web-apis-homework-demo.gif))
 
 ## My Project
 
