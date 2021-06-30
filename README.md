@@ -1,7 +1,14 @@
 # 04-Code-Quiz
+
+📝By Hannah Dowell
+
+💻Deployed Code Quiz Page: https://hrdowell.github.io/04-Code-Quiz/
+
+👩‍💻GitHub profile: https://github.com/hrdowell
+
 ## My Task
 
-Create a code quiz that tracks high scores
+Create a code quiz that tracks high scores using JavaScript, Web API's, HTML, and CSS.
 
 
 
@@ -39,10 +46,20 @@ The following animation demonstrates the application functionality:
 
 ✨ My website opens with a landing page featuring a title, brief description, and a "Start Quiz" button. When the button is clicked, a 90-second timer is triggered, giving the user 15 seconds per question.
 
+<img src="./assets/images/indexpic.png" alt="index.html VS Code Screenshot" style="zoom:30%;" />
+
 ✨ Next, I appended an HTML page containing 6 multiple choice questions, with 4 possible answers each. For each wrong answer, 10 seconds are subtracted from the timer. All answers are recorded with an event listener that keeps track of all correct answers clicked. 
+
+<img src="./assets/images/questionsscreenshot.png" alt="Code Quiz Multiple Choice Questions Screenshot" style="zoom:30%;" />
 
 ✨When the timer runs out, the page shows the user's final score and number of questions answered correctly. 
 
-✨There is an input box for the user's initials to save to a local storage list of high scores. When the submit button is clicked, all of the high scores and the corresponding intials saved on the local storage are displayed. The user has the option to start over or clear the high scores.
+<img src="./assets/images/gameover.png" alt="Code Quiz Game Over Screenshot" style="zoom:30%;" />
 
-✨
+✨There is an input box for the user's initials to save to a local storage list of high scores. When the submit button is clicked, all of the high scores and the corresponding intials saved on the local storage are displayed. 
+
+<img src="./assets/images/highscores.png" alt="Code Quiz High Scores Screenshot" style="zoom:30%;" />
+
+✨The user has the option to start over or clear the high scores. Below is a gif recording of my final website, accessible at the following URL: 💻🖱 https://hrdowell.github.io/04-Code-Quiz/
+
+![index.html VS Code screenshot](./assets/images/recording.gif)
