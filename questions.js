@@ -1,31 +1,35 @@
 // Var with array and object for questions 
 var questions = [
     {
+        title: "The condition in an if / else statement is enclosed within ____.",
+        choices: ["parentheses", "curly brackets", "square brackets", "quotes"],
+        answer: "parentheses"
+    },
+    {
+        title: "Arrays in Javascript can be used to store ____.",
+        choices: ["other arrays", "booleans", "numbers and strings", "all of the above"],
+        answer: "all of the above"
+    },
+    {
+        title: "Javascript is put inside which HTML element?",
+        choices: ["<head>", "<js>", "<link>", "<script>"],
+        answer: "<script>"
+    },
+    {
+        title: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        choices: ["Javascript", "terminal / bash", "for loops", "console log"],
+        answer: "console log"
+    },
+    {
         title: "Commonly used data types DO NOT include:",
         choices: ["strings", "booleans", "alerts", "numbers"],
         answer: "alerts"
     },
     {
-        title: "The condition in an if / else statement is enclosed within ____.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
-    },
-    {
-        title: "Arrays in Javascript can be used to store ____.",
-        choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
-        answer: "all of the above"
-    },
-    {
         title: "String values must be enclosed within ____ when being assigned to variables.",
-        choices: ["commas", "curly brackets", "quotes", "parenthesis"],
+        choices: ["commas", "parenthesis", "quotes", "curly brackets"],
         answer: "quotes"
     },
-    {
-        title: "A very useful tool for used during development and debugging for printing content to the debugger is:",
-        choices: ["Javascript", "terminal / bash", "for loops", "console log"],
-        answer: "console log"
-    },
-
 ];
 // Declared variables
 var score = 0;
@@ -39,7 +43,7 @@ var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
 // Seconds left is 15 seconds per question:
-var secondsLeft = 76;
+var secondsLeft = 90;
 // Holds interval time
 var holdInterval = 0;
 // Holds penalty time
@@ -47,17 +51,17 @@ var penalty = 10;
 // Creates new element
 var ulCreate = document.createElement("ul");
 
-// Triggers timer on button, shows user a display on the screen
+// Triggers timer to countdown from secondsLeft time (90 seconds) when user clicks on button with id="startTime", shows user a display on the screen
 timer.addEventListener("click", function () {
-    // We are checking zero because its originally set to zero
+    //Check for zero because holdInterval is initially set to zero. If it is, reset the timer to secondsLeft and log the current time remaining for the user.
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
             secondsLeft--;
-            currentTime.textContent = "Time: " + secondsLeft;
-
+            currentTime.textContent = "Time remaining: " + secondsLeft;
+            //if seconds left hits 0, clear the time to reset, trigger gameOver() function and display the text "Time's Up!"
             if (secondsLeft <= 0) {
                 clearInterval(holdInterval);
-                allDone();
+                gameOver();
                 currentTime.textContent = "Time's up!";
             }
         }, 1000);
@@ -110,24 +114,25 @@ function compare(event) {
     questionIndex++;
 
     if (questionIndex >= questions.length) {
-        // All done will append last page with user stats
-        allDone();
-        createDiv.textContent = "End of quiz!" + " " + "You got  " + score + "/" + questions.length + " Correct!";
+        // Game Over function will append last page with user stats
+        gameOver();
+        createDiv.textContent = `End of Quiz! You answered ${score} out of ${questions.length} correct.`
+
     } else {
         render(questionIndex);
     }
     questionsDiv.appendChild(createDiv);
 
 }
-// All done will append last page
-function allDone() {
+// Game over function will append last page
+function gameOver() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
 
     // Heading:
     var createH1 = document.createElement("h1");
     createH1.setAttribute("id", "createH1");
-    createH1.textContent = "All Done!"
+    createH1.textContent = "Game Over!"
 
     questionsDiv.appendChild(createH1);
 
