@@ -54,11 +54,11 @@ The following animation demonstrates the application functionality:
 
 ✨When the timer runs out, the page shows the user's final score and number of questions answered correctly. 
 
-<img src="./assets/images/gameover.png" alt="Code Quiz Game Over Screenshot" style="zoom:30%;" />
+<img src="./assets/images/gameover.PNG" alt="Code Quiz Game Over Screenshot" style="zoom:30%;" />
 
 ✨There is an input box for the user's initials to save to a local storage list of high scores. When the submit button is clicked, all of the high scores and the corresponding intials saved on the local storage are displayed. 
 
-<img src="./assets/images/highscores.png" alt="Code Quiz High Scores Screenshot" style="zoom:30%;" />
+<img src="./assets/images/highscores.PNG" alt="Code Quiz High Scores Screenshot" style="zoom:30%;" />
 
 ✨The user has the option to start over or clear the high scores. Below is a gif recording of my final website, accessible at the following URL: 💻🖱 https://hrdowell.github.io/04-Code-Quiz/
 
