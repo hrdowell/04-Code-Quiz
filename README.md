@@ -46,11 +46,11 @@ The following animation demonstrates the application functionality:
 
 ✨ My website opens with a landing page featuring a title, brief description, and a "Start Quiz" button. When the button is clicked, a 90-second timer is triggered, giving the user 15 seconds per question.
 
-<img src="./assets/images/indexpic.png" alt="index.html VS Code Screenshot" style="zoom:30%;" />
+<img src="./assets/images/indexpic.PNG" alt="index.html VS Code Screenshot" style="zoom:30%;" />
 
 ✨ Next, I appended an HTML page containing 6 multiple choice questions, with 4 possible answers each. For each wrong answer, 10 seconds are subtracted from the timer. All answers are recorded with an event listener that keeps track of all correct answers clicked. 
 
-<img src="./assets/images/questionsscreenshot.png" alt="Code Quiz Multiple Choice Questions Screenshot" style="zoom:30%;" />
+<img src="./assets/images/questionsscreenshot.PNG" alt="Code Quiz Multiple Choice Questions Screenshot" style="zoom:30%;" />
 
 ✨When the timer runs out, the page shows the user's final score and number of questions answered correctly. 
 
